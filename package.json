@@ -2,7 +2,7 @@
   "name": "mtm",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lauffenp.github.io",
+  "homepage": "https://lauffenp.github.io/mtm-project",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.2.0",
     "react": "^16.4.2",
