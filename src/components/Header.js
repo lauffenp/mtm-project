@@ -22,11 +22,11 @@ export class Header extends React.Component {
 
   render() {
     const {disabled} = this.state;
-    const { name, onChangeName } = this.props;
+    const { name, onChangeName, onBlur } = this.props;
     return (
       <header className="App-header">
         <div className="top-bar-bg">
-          <img src={topbar} width="100%" />
+          <img src={topbar} width="100%"/>
         </div>
         <div className="bottom-bar-bg">
           <img src={lowbarLft} className="align-left no-rt-margin" />
@@ -36,6 +36,7 @@ export class Header extends React.Component {
             className="align-left"
             disabled={disabled}
             ref={r => this.handleRef(r)}
+            onBlur={() => onBlur()}
             label={
               <i
                 className = "far fa-edit"

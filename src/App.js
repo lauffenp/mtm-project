@@ -87,7 +87,11 @@ class App extends Component {
     const {items, availItems, clientX, clientY, inTransition, name, initials} = this.state;
     return (
       <div className="App">
-        <Header name={name} onChangeName={({ value }) => this.changeStateVar({name: NAME_VAR, value})}/>
+        <Header
+          name={name}
+          onChangeName={({ value }) => this.changeStateVar({name: NAME_VAR, value})}
+          onBlur={() => this.saveState()}
+        />
         <div className="main">
           {inTransition &&
             <div className="overlay" onClick={() => this.clearInTransition()}></div>

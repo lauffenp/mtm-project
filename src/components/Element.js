@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Input, Form, Image } from 'semantic-ui-react';
-import { LONG_TEXT_TYPE, ONLY_IMAGE_TYPE, IMAGE_TYPE } from '../constants';
+import { LONG_TEXT_TYPE, ONLY_IMAGE_TYPE, IMAGE_TYPE, TITLE, DATA } from '../constants';
 import markup from '../img/markup.png';
 
 export class Element extends React.Component {
@@ -19,27 +19,25 @@ export class Element extends React.Component {
     const { isImage, isOnlyImage, mouseOver } = this.state;
 
     const textInput = field_type === LONG_TEXT_TYPE
-      ? <Card.Content>
+      ? <Form>
         <Image src={markup} />
-        <Form>
-          <Form.TextArea
-            onBlur={eleOnBlur}
-            value={data}
-            error={!data}
-            rows={2}
-            disabled={disabled || !fixed}
-            className="element-input"
-            onChange={({target: { value }}) => changeAttr({ title, attr: 'data', value, index })}
-          />
-        </Form>
-      </Card.Content>
+        <Form.TextArea
+          onBlur={eleOnBlur}
+          value={data}
+          error={!data}
+          rows={2}
+          disabled={disabled || !fixed}
+          className="element-input"
+          onChange={({target: { value }}) => changeAttr({ title, attr: DATA, value, index })}
+        />
+      </Form>
       : <Input
         onBlur={eleOnBlur}
         error={!data}
         value={data}
         disabled={disabled || !fixed}
         className="element-input"
-        onChange={({target: { value }}) => changeAttr({ title, attr: 'data', value, index })}
+        onChange={({target: { value }}) => changeAttr({ title, attr: DATA, value, index })}
       />;
 
     let content = textInput;
@@ -66,7 +64,7 @@ export class Element extends React.Component {
               error={!title}
               value={title.toUpperCase()}
               disabled={disabled}
-              onChange={({target: { value }}) => changeAttr({ title, attr: 'title', value, index })}
+              onChange={({target: { value }}) => changeAttr({ title, attr: TITLE, value, index })}
             />
 
             {!disabled &&

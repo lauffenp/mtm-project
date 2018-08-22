@@ -13,7 +13,7 @@
 }
 
 .top-bar-bg {
-  background-color: #3B4545;
+  background-color: #3C4646;
   width: 100%;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .bottom-bar-bg img.align-right {
-  width: 40%;
+  height: 57px;
 }
 
 .bottom-bar-bg div.input.right i.far.fa-edit{
@@ -112,12 +112,16 @@
 }
 
 .sidebar {
-  width: 35%;
+  width: 30%;
   position: absolute;
-  top: 95px;
-  right: 0;
-  bottom: 0;
+  top: 12%;
+  right: 15px; /* for scrollbar */
   background-color: #EFEFEF;
+  bottom: 0;
+}
+
+.sidebar .hidden.ui.grid {
+  display: none;
 }
 
 .App .main .grid .row {
@@ -143,12 +147,12 @@
   height: 13px;
   width: 304px;
   color: #646E6E;
-  font-family: "Source Sans Pro";
   font-size: 12px;
   font-weight: 600;
   letter-spacing: 0.8px;
   line-height: 13px;
   cursor: pointer;
+  margin-right: 0;
 }
 
 .App .sidebar .grid .row.grid-header span{
@@ -192,9 +196,10 @@ img.ui.square {
 }
 
 .App .main .grid .column .ui.card .content {
-  padding: .5em 1rem;
+  padding: 0 1rem .5em;
   border-top: none;
 }
+
 .App .main .grid .row .ui.card .content {
   padding: .5em 1rem;
   border-top: none;

@@ -20,7 +20,7 @@ export const initialItems = [
     title: 'quote',
     field_type: LONG_TEXT_TYPE,
     width: WIDTH_WIDE,
-    data: 'Something about life...'
+    data: 'And if thou gaze long into an abyss, the abyss will also gaze into thee.'
   },
   {
     title: 'age',

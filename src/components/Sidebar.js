@@ -16,7 +16,7 @@ export class Sidebar extends React.Component {
     return (
       <Grid>
         <Grid.Row
-          className="grid-header"
+          className={`grid-header ${showSidebar ? '' : 'hidden'}`}
           onClick={() => !showSidebar ? this.setState({ showSidebar: true }) : Function.prototype}
         >
           <span>{'Add Element'.toUpperCase()}</span>
@@ -31,7 +31,7 @@ export class Sidebar extends React.Component {
           <Grid.Row className="lb">
             <Header as="h5">
             Click or drag & drop one of the element types below to add
-it to the persona.
+it to the persona. <br/>
 Click on the  <i className="fa fa-cog"/>  icon of each element to edit its settings.
 You can reorder the elements by dragging them.
             </Header>

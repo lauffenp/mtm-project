@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Text field",
     "field_type": "short_text",
-    "data": "I am data",
+    "data": "Short text field",
     "column_id": 1,
     "prev_id": null,
     "next_id": 2
@@ -12,7 +12,7 @@
     "id": 4,
     "title": "Long Text field",
     "field_type": "long_text",
-    "data": "",
+    "data": "Long Text Field",
     "column_id": 1,
     "prev_id": 2,
     "next_id": null

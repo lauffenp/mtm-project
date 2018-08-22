@@ -6,5 +6,7 @@ export const WIDTH_THIN = 'thin';
 export const WIDTH_WIDE = 'wide';
 export const NAME_VAR = 'name';
 export const INITIALS_VAR = 'initials';
+export const TITLE = 'title';
+export const DATA = 'data';
 
 export const LONG_TEXT_DEFAULT = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.';
