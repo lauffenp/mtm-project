@@ -114,7 +114,7 @@
 .sidebar {
   width: 30%;
   position: absolute;
-  top: 12%;
+  top: 120px;
   right: 15px; /* for scrollbar */
   background-color: #EFEFEF;
   bottom: 0;
